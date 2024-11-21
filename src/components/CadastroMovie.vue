@@ -156,10 +156,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: #5e5e5e;
-<<<<<<< HEAD
-
-
-
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -170,7 +166,6 @@ button[type="submit"]:active {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .form-container {
     padding: 20px;
   }
@@ -182,6 +177,7 @@ button[type="submit"]:active {
   button {
     font-size: 1rem;
     padding: 10px;
+  }
 
   .row {
     flex-direction: column;
