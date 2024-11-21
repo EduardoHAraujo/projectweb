@@ -67,9 +67,9 @@ export default {
   max-width: 600px;
   margin: 50px auto;
   padding: 30px;
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente de fundo */
+  background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
   border-radius: 12px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
   color: white;
 }
@@ -87,7 +87,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espaçamento uniforme entre os elementos */
+  gap: 20px;
 }
 
 /* Rótulos */
@@ -105,38 +105,38 @@ select {
   border-radius: 8px;
   font-size: 1rem;
   width: 100%;
-  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); /* Efeito interno */
-  background: rgba(255, 255, 255, 0.8); /* Fundo levemente translúcido */
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 input:focus,
 select:focus {
   border: 2px solid #fff;
   outline: none;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Brilho no foco */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 /* Botão */
 button {
   padding: 12px;
-  background: #ff6b6b; /* Cor inicial */
+  background: #4a4a4a;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease; /* Transições suaves */
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background: #e63946; /* Cor ao passar o mouse */
-  transform: translateY(-3px); /* Leve elevação */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  background: #5e5e5e;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
-  transform: translateY(0); /* Sem elevação ao clicar */
+  transform: translateY(0);
   box-shadow: none;
 }
 

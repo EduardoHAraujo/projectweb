@@ -17,17 +17,17 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fundo com gradiente */
+  background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
 .welcome-box {
-  background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+  background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -49,7 +49,7 @@ p {
 .button {
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #2575fc;
+  color: #3a3a3a;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -57,8 +57,8 @@ p {
 }
 
 .button:hover {
-  background-color: #2575fc;
+  background-color: #3a3a3a;
   color: white;
-  transform: scale(1.05); /* Leve aumento no hover */
+  transform: scale(1.05);
 }
 </style>

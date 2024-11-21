@@ -16,14 +16,14 @@
 
 <style scoped>
 .sidebar {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente de fundo */
+  background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
   color: white;
   padding: 1rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra lateral */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
 }
 
@@ -51,12 +51,12 @@ li {
 }
 
 .link:hover {
-  background: rgba(255, 255, 255, 0.2); /* Destaque no hover */
-  transform: translateX(5px); /* Leve movimento no hover */
+  background: rgba(255, 255, 255, 0.1); 
+  transform: translateX(5px); 
 }
 
 .link.active {
-  background: rgba(255, 255, 255, 0.3); /* Destaque para link ativo */
-  transform: translateX(0); /* Garante que não seja afetado pelo hover */
+  background: rgba(255, 255, 255, 0.2); 
+  transform: translateX(0);
 }
 </style>
