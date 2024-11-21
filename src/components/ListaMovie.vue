@@ -19,7 +19,6 @@
     </div>
     <p v-else>Nenhum filme cadastrado.</p>
 
-    <!-- Formulário para Edição -->
     <div v-if="editando" class="edit-form">
       <h2>Editar Filme</h2>
       <form @submit.prevent="salvarEdicao">

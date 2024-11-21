@@ -21,6 +21,11 @@ export default {
 </script>
 
 <style>
+
+.sidebar[data-v-1fbabfaf] {
+  height: 95.5%;
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -41,4 +46,5 @@ export default {
   padding: 0px;
   background-color: #f4f4f4;
 }
+
 </style>

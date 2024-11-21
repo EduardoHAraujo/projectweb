@@ -12,6 +12,7 @@
 </template>
 
 <style scoped>
+
 .home-container {
   display: flex;
   justify-content: center;
@@ -62,4 +63,7 @@ p {
   color: white;
   transform: scale(1.05);
 }
+
+
+
 </style>
