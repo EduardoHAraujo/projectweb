@@ -62,11 +62,15 @@ export default {
 </script>
 
 <style scoped>
-/* Container principal do formulário */
+
+
 .form-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 50px auto;
-  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 20px;
   background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
   border-radius: 12px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -74,7 +78,6 @@ export default {
   color: white;
 }
 
-/* Título do formulário */
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -83,21 +86,18 @@ h1 {
   font-weight: bold;
 }
 
-/* Estilo do formulário */
 form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Rótulos */
 label {
   font-size: 1.1rem;
   font-weight: bold;
   color: #f1f1f1;
 }
 
-/* Campos de entrada e seleção */
 input,
 select {
   padding: 12px;
@@ -116,7 +116,6 @@ select:focus {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-/* Botão */
 button {
   padding: 12px;
   background: #4a4a4a;
@@ -140,7 +139,6 @@ button:active {
   box-shadow: none;
 }
 
-/* Estilo responsivo */
 @media (max-width: 768px) {
   .form-container {
     padding: 20px;
