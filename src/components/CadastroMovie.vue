@@ -2,33 +2,48 @@
   <div class="form-container">
     <h1>Cadastro de Filme</h1>
     <form @submit.prevent="cadastrarFilme">
-      <label for="nome">Nome do Filme:</label>
-      <div class="nome-classificacao">
-        <input type="text" id="nome" v-model="filme.nome" placeholder="Digite o nome do filme" required />
-        <select id="classificacao" v-model="filme.classificacao" required>
-          <option value="" disabled>Classificação</option>
-          <option value="Livre">Livre</option>
-          <option value="10">10 anos</option>
-          <option value="12">12 anos</option>
-          <option value="14">14 anos</option>
-          <option value="16">16 anos</option>
-          <option value="18">18 anos</option>
-        </select>
+      <div class="row">
+        <div class="form-group">
+          <label for="nome">Nome do Filme:</label>
+          <input type="text" id="nome" v-model="filme.nome" placeholder="Digite o nome do filme" required />
+        </div>
+        <div class="form-group">
+          <label for="classificacao">Classificação:</label>
+          <select id="classificacao" v-model="filme.classificacao" required>
+            <option value="" disabled>Selecione a classificação</option>
+            <option value="Livre">Livre</option>
+            <option value="10">10 anos</option>
+            <option value="12">12 anos</option>
+            <option value="14">14 anos</option>
+            <option value="16">16 anos</option>
+            <option value="18">18 anos</option>
+          </select>
+        </div>
       </div>
 
-      <label for="genero">Gênero e Produtora:</label>
-      <div class="genero-produtora">
-        <select v-model="filme.genero" class="dropdown" required>
-          <option value="" disabled>Selecione um gênero</option>
-          <option v-for="genero in generos" :key="genero" :value="genero">{{ genero }}</option>
-        </select>
-        <input type="text" id="produtora" v-model="filme.produtora" placeholder="Produtora do filme" required />
+      <div class="row">
+        <div class="form-group">
+          <label for="genero">Gênero:</label>
+          <select id="genero" v-model="filme.genero" required>
+            <option value="" disabled>Selecione um gênero</option>
+            <option v-for="genero in generos" :key="genero" :value="genero">{{ genero }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="produtora">Produtora:</label>
+          <input type="text" id="produtora" v-model="filme.produtora" placeholder="Digite a produtora" required />
+        </div>
       </div>
 
-      <label for="ano">Ano e Duração:</label>
-      <div class="ano-duracao">
-        <input type="number" id="ano" v-model="filme.ano" placeholder="Ano de lançamento" required />
-        <input type="number" id="duracao" v-model="filme.duracao" placeholder="Duração em minutos" required />
+      <div class="row">
+        <div class="form-group">
+          <label for="ano">Ano:</label>
+          <input type="number" id="ano" v-model="filme.ano" placeholder="Ano de lançamento" required />
+        </div>
+        <div class="form-group">
+          <label for="duracao">Duração (min):</label>
+          <input type="number" id="duracao" v-model="filme.duracao" placeholder="Duração em minutos" required />
+        </div>
       </div>
 
       <button type="submit">Cadastrar</button>
@@ -94,17 +109,22 @@ form {
   gap: 20px;
 }
 
-label {
-  font-size: 1.1rem;
-  color: #f1f1f1;
+.row {
+  display: flex;
+  gap: 20px;
 }
 
-/* Estilização para campos combinados */
-.nome-classificacao,
-.genero-produtora,
-.ano-duracao {
+.form-group {
+  flex: 1;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-bottom: 5px;
 }
 
 input,
@@ -113,12 +133,13 @@ select {
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  flex: 1;
   background: rgba(255, 255, 255, 0.8);
 }
 
-select.dropdown {
-  flex: 1;
+input:focus,
+select:focus {
+  border: 2px solid #007bff;
+  outline: none;
 }
 
 button[type="submit"] {
@@ -135,7 +156,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: #5e5e5e;
-
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -146,17 +166,8 @@ button[type="submit"]:active {
 }
 
 @media (max-width: 768px) {
-  .form-container {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 10px;
+  .row {
+    flex-direction: column;
   }
 }
 </style>
