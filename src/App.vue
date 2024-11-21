@@ -37,6 +37,10 @@ export default {
   flex: 1;
 }
 
+.sidebar[data-v-1fbabfaf]{
+  height: 96%
+}
+
 .content {
   flex: 1;
   padding: 0px;
