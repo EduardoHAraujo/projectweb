@@ -135,6 +135,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: #5e5e5e;
+
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
