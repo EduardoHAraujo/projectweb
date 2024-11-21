@@ -17,14 +17,15 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
-  color: white;
+  background-image: url('/src/assets/background_filme.jpg');
+  background-size: cover;
+  color: rgb(255, 255, 255);
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
 .welcome-box {
-  background: rgba(255, 255, 255, 0.1);
+  background: #808080;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

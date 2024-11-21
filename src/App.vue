@@ -32,9 +32,13 @@ export default {
   flex: 1;
 }
 
+.sidebar[data-v-1fbabfaf]{
+  height: 96%
+}
+
 .content {
   flex: 1;
-  padding: 16px;
+  padding: 0px;
   background-color: #f4f4f4;
 }
 </style>

@@ -71,11 +71,10 @@ export default {
 </script>
 
 <style scoped>
-/* Estilização geral do formulário */
 .form-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 50px auto;
-  padding: 30px;
+  padding: 20px 40px;
   background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
   border-radius: 12px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -136,5 +135,28 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: #5e5e5e;
+
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }
 </style>
